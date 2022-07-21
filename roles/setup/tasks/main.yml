@@ -20,9 +20,6 @@
   
 - name: Install docker
   import_tasks: install_docker.yml
-  
-- name: Install docker-compose
-  import_tasks: install_docker_compose.yml
 
 - name: Install promtail
   import_tasks: install_promtail.yml
