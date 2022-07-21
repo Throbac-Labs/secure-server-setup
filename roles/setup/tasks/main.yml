@@ -17,6 +17,12 @@
 - name: Install node exporter
   import_tasks: install_node_exporter.yml
   when: node_exporter|default(false)|bool == true
+  
+- name: Install docker
+  import_tasks: install_docker.yml
+  
+- name: Install docker-compose
+  import_tasks: install_docker_compose.yml
 
 - name: Install promtail
   import_tasks: install_promtail.yml
