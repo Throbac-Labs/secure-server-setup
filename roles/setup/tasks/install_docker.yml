@@ -23,10 +23,15 @@
     name: docker
 
 - name: Add adminstrator to docker group
+  ansible.builtin.user:
   user:
     name: "{{ admin_user }}"
     groups: docker
     append: yes
+
+- name: reset ssh connection to allow user changes to affect ansible user
+  ansible.builtin.meta:
+    reset_connection
 
 - name: Install Docker Compose
   get_url:
