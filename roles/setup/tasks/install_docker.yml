@@ -9,7 +9,7 @@
   apt_key:
     url: "{{ docker_gpg_url }}"
     state: present
-    
+ 
 - name: Add Docker repository
   apt_repository:
     repo: "{{ docker_repo }}"
@@ -24,7 +24,6 @@
 
 - name: Add adminstrator to docker group
   ansible.builtin.user:
-  user:
     name: "{{ admin_user }}"
     groups: docker
     append: yes
