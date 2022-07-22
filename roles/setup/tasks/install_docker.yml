@@ -28,9 +28,6 @@
     groups: docker
     append: yes
 
-- name: reset ssh connection to allow user changes to affect ansible user
-  meta: reset_connection
-
 - name: Install Docker Compose
   get_url:
     url: "{{ docker_compose_url }}"
