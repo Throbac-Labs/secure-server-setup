@@ -29,8 +29,7 @@
     append: yes
 
 - name: reset ssh connection to allow user changes to affect ansible user
-  ansible.builtin.meta:
-    reset_connection
+  meta: reset_connection
 
 - name: Install Docker Compose
   get_url:
