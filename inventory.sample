@@ -2,8 +2,9 @@
 192.168.0.20
 
 [all:vars]
-ansible_ssh_user=root
+ansible_ssh_user=root # change to ubuntu after initial install if you plan to use playbooks again
 ansible_ssh_private_key_file="~/.ssh/id_rsa"
+# ansible_ssh_port=22222 # uncomment after initial deploy if you plan to use the playbook again
 
 hostname="SERVER_NAME"
 deployment_user="USER_NAME"
