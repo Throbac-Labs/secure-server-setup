@@ -28,6 +28,9 @@
 - name: close standard ssh port
   command: ufw deny 22/tcp
 
+- name: allow open ssh
+  command: ufw allow openssh
+
 - name: Disable port 22 on ssh config
   lineinfile:
     dest: '/etc/ssh/sshd_config'
