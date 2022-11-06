@@ -23,6 +23,12 @@
     port: "{{ ssh_port }}"
     proto: tcp
 
+- name: Open ssh port
+  ufw:
+    rule: allow
+    port: openssh
+    proto: tcp
+
 - name: Deny port 22
   ufw:
     rule: deny
