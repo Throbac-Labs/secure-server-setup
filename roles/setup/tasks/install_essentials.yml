@@ -11,7 +11,7 @@
       - git
       - ufw
       - bash-completion
-      - hstr
+ #     - hstr
       - screen
     state: latest
     update_cache: true
