@@ -2,7 +2,7 @@
 - hosts: all
   gather_facts: no
   become: true
-  vars_files: vars/docker_vars.yml
+  vars_files: vars/vars.yml
   roles:
     - setup
     - security
