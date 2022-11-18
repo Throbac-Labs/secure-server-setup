@@ -12,6 +12,7 @@ monitor_user_dir: "/home/{{ monitor_user }}"
 #users:  
 #  - username: '{{ sui_user }}'
 admin_user: ubuntu
+sdn_mtu: 1358
 docker_required_packages:
   - "apt-transport-https"
   - "ca-certificates"
