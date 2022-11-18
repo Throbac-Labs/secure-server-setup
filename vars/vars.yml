@@ -9,6 +9,7 @@ grafana_cloud_promtail_apikey: "YOUR-GRAFANA-CLOUD-PROMTAIL-PASSWORD"
 grafana_cloud_promtail_url: "https://{{ grafana_cloud_promtail_username }}:{{ grafana_cloud_promtail_apikey }}@YOUR-GRAFANA-CLOUD-REMOTE-PROMTAIL-URL" 
 monitor_user: "monitor" 
 monitor_user_dir: "/home/{{ monitor_user }}"
+prometheus_label: "NAME-THIS-PROMETHEUS-SOURCE"
 #users:  
 #  - username: '{{ sui_user }}'
 admin_user: ubuntu
